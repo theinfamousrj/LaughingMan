@@ -2,7 +2,7 @@
 //  LaughingManAppDelegate.m
 //  LaughingMan
 //
-//  Created by RJ Hill on 2/6/12.
+//  Created by theinfamousrj on 2/6/12.
 //  Copyright (c) 2012 omfgp.com. All rights reserved.
 //
 
