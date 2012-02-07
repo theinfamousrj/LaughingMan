@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		813F785414E0E48400436F58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F785314E0E48400436F58 /* UIKit.framework */; };
+		813F785614E0E48400436F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F785514E0E48400436F58 /* Foundation.framework */; };
+		813F785814E0E48400436F58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F785714E0E48400436F58 /* CoreGraphics.framework */; };
+		813F785E14E0E48400436F58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 813F785C14E0E48400436F58 /* InfoPlist.strings */; };
+		813F786014E0E48400436F58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 813F785F14E0E48400436F58 /* main.m */; };
+		813F786414E0E48400436F58 /* LaughingManAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 813F786314E0E48400436F58 /* LaughingManAppDelegate.m */; };
+		813F786714E0E48400436F58 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813F786514E0E48400436F58 /* MainStoryboard_iPhone.storyboard */; };
+		813F786A14E0E48400436F58 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813F786814E0E48400436F58 /* MainStoryboard_iPad.storyboard */; };
+		813F786D14E0E48400436F58 /* LaughingManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813F786C14E0E48400436F58 /* LaughingManViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		813F784F14E0E48400436F58 /* LaughingMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaughingMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813F785314E0E48400436F58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		813F785514E0E48400436F58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		813F785714E0E48400436F58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		813F785B14E0E48400436F58 /* LaughingMan-Info.plist */ = {isa = PBXFileReference; path = "LaughingMan-Info.plist"; sourceTree = "<group>"; };
+		813F785D14E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		813F785F14E0E48400436F58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		813F786114E0E48400436F58 /* LaughingMan-Prefix.pch */ = {isa = PBXFileReference; path = "LaughingMan-Prefix.pch"; sourceTree = "<group>"; };
+		813F786214E0E48400436F58 /* LaughingManAppDelegate.h */ = {isa = PBXFileReference; path = LaughingManAppDelegate.h; sourceTree = "<group>"; };
+		813F786314E0E48400436F58 /* LaughingManAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingManAppDelegate.m; sourceTree = "<group>"; };
+		813F786614E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		813F786914E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		813F786B14E0E48400436F58 /* LaughingManViewController.h */ = {isa = PBXFileReference; path = LaughingManViewController.h; sourceTree = "<group>"; };
+		813F786C14E0E48400436F58 /* LaughingManViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingManViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		813F784C14E0E48400436F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813F785414E0E48400436F58 /* UIKit.framework in Frameworks */,
+				813F785614E0E48400436F58 /* Foundation.framework in Frameworks */,
+				813F785814E0E48400436F58 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		813F784414E0E48400436F58 = {
+			isa = PBXGroup;
+			children = (
+				813F785914E0E48400436F58 /* LaughingMan */,
+				813F785214E0E48400436F58 /* Frameworks */,
+				813F785014E0E48400436F58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		813F785014E0E48400436F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				813F784F14E0E48400436F58 /* LaughingMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		813F785214E0E48400436F58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				813F785314E0E48400436F58 /* UIKit.framework */,
+				813F785514E0E48400436F58 /* Foundation.framework */,
+				813F785714E0E48400436F58 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		813F785914E0E48400436F58 /* LaughingMan */ = {
+			isa = PBXGroup;
+			children = (
+				813F786214E0E48400436F58 /* LaughingManAppDelegate.h */,
+				813F786314E0E48400436F58 /* LaughingManAppDelegate.m */,
+				813F786514E0E48400436F58 /* MainStoryboard_iPhone.storyboard */,
+				813F786814E0E48400436F58 /* MainStoryboard_iPad.storyboard */,
+				813F786B14E0E48400436F58 /* LaughingManViewController.h */,
+				813F786C14E0E48400436F58 /* LaughingManViewController.m */,
+				813F785A14E0E48400436F58 /* Supporting Files */,
+			);
+			path = LaughingMan;
+			sourceTree = "<group>";
+		};
+		813F785A14E0E48400436F58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				813F785B14E0E48400436F58 /* LaughingMan-Info.plist */,
+				813F785C14E0E48400436F58 /* InfoPlist.strings */,
+				813F785F14E0E48400436F58 /* main.m */,
+				813F786114E0E48400436F58 /* LaughingMan-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		813F784E14E0E48400436F58 /* LaughingMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813F787014E0E48400436F58 /* Build configuration list for PBXNativeTarget "LaughingMan" */;
+			buildPhases = (
+				813F784B14E0E48400436F58 /* Sources */,
+				813F784C14E0E48400436F58 /* Frameworks */,
+				813F784D14E0E48400436F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaughingMan;
+			productName = LaughingMan;
+			productReference = 813F784F14E0E48400436F58 /* LaughingMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		813F784614E0E48400436F58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = omfgp.com;
+			};
+			buildConfigurationList = 813F784914E0E48400436F58 /* Build configuration list for PBXProject "LaughingMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 813F784414E0E48400436F58;
+			productRefGroup = 813F785014E0E48400436F58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				813F784E14E0E48400436F58 /* LaughingMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		813F784D14E0E48400436F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813F785E14E0E48400436F58 /* InfoPlist.strings in Resources */,
+				813F786714E0E48400436F58 /* MainStoryboard_iPhone.storyboard in Resources */,
+				813F786A14E0E48400436F58 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		813F784B14E0E48400436F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813F786014E0E48400436F58 /* main.m in Sources */,
+				813F786414E0E48400436F58 /* LaughingManAppDelegate.m in Sources */,
+				813F786D14E0E48400436F58 /* LaughingManViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		813F785C14E0E48400436F58 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813F785D14E0E48400436F58 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		813F786514E0E48400436F58 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813F786614E0E48400436F58 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		813F786814E0E48400436F58 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813F786914E0E48400436F58 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		813F786E14E0E48400436F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		813F786F14E0E48400436F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		813F787114E0E48400436F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMan/LaughingMan-Prefix.pch";
+				INFOPLIST_FILE = "LaughingMan/LaughingMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		813F787214E0E48400436F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaughingMan/LaughingMan-Prefix.pch";
+				INFOPLIST_FILE = "LaughingMan/LaughingMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		813F784914E0E48400436F58 /* Build configuration list for PBXProject "LaughingMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813F786E14E0E48400436F58 /* Debug */,
+				813F786F14E0E48400436F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813F787014E0E48400436F58 /* Build configuration list for PBXNativeTarget "LaughingMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813F787114E0E48400436F58 /* Debug */,
+				813F787214E0E48400436F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 813F784614E0E48400436F58 /* Project object */;
+}
