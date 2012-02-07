@@ -20,6 +20,12 @@
 
 // Step 15: Create CoreImageContext
 @property (nonatomic, strong) CIContext *context;
+
+// Step 25: Create a CIDetector property for lazy instation later
+@property (nonatomic, strong) CIDetector *faceDetector;
+
+// Step 31: Create a UIImageView property for laughingMan
+@property (nonatomic, strong) UIImageView *laughingMan;
 @end
 
 
@@ -30,6 +36,19 @@
 @synthesize frameOutput = _frameOutput;
 @synthesize imageView = _imageView;
 @synthesize context = _context;
+@synthesize faceDetector = _faceDetector;
+@synthesize laughingMan = _laughingMan;
+
+// Step 26: Lazy instantiation of CIDetector faceDetector for initialization (low accuracy)
+- (CIDetector *)faceDetector
+{
+    if (!_faceDetector) {
+        NSDictionary *detectorOptions = [NSDictionary dictionaryWithObjectsAndKeys:CIDetectorAccuracyLow,CIDetectorAccuracy,nil];
+        _faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
+    }
+    return _faceDetector;
+}
+
 
 // Step 16: Lazy instantiation of CIContext context for initialization
 - (CIContext *)context
@@ -81,6 +100,11 @@
     [self.session startRunning];
     
     // Step 9 is in the header
+    
+    // Step 32: Add laughingMan to the image
+    self.laughingMan = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"h4x.png"]];
+    [self.laughingMan setHidden:YES];
+    [self.view addSubview:self.laughingMan];
 }
 
 // Step 10: Implement delegate method
@@ -95,25 +119,59 @@
     CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pb];
     
     // Optional steps for filtering
+    // All filter steps are commented out with '///'
+    // To re-do the filter, remove the '///' and follow step 24
     // Step 19: Create a filter
     // Filters are in an NSDictionary type setup and are called by a key in the form of an NSString eg: @"CIHueAdjust"
-    CIFilter *filter = [CIFilter filterWithName:@"CIHueAdjust"];
+    ///CIFilter *filter = [CIFilter filterWithName:@"CIHueAdjust"];
     
     // Step 20: Set the defaults for the filter
-    [filter setDefaults];
+    ///[filter setDefaults];
     
     // Step 21: Send the filter an image
-    [filter setValue:ciImage forKey:@"inputImage"];
+    ///[filter setValue:ciImage forKey:@"inputImage"];
     
     // Step 22: Set the angle
-    [filter setValue:[NSNumber numberWithFloat:2.0] forKey:@"inputAngle"];
+    ///[filter setValue:[NSNumber numberWithFloat:2.0] forKey:@"inputAngle"];
     
     // Step 23: Send the result of the filtered image back
-    CIImage *result = [filter valueForKey:@"outputImage"];
+    ///CIImage *result = [filter valueForKey:@"outputImage"];
+    
+    // Step 27: Create an array of features and loop through it
+    NSArray *features = [self.faceDetector featuresInImage:ciImage];
+    bool faceFound = false;
+    for (CIFaceFeature *face in features) {
+        if (face.hasLeftEyePosition && face.hasRightEyePosition) {
+            CGPoint eyeCenter = CGPointMake(face.leftEyePosition.x*0.5+face.rightEyePosition.x*0.5, face.leftEyePosition.y*0.5+face.rightEyePosition.y*0.5);
+            
+            // Step 28: Set the position of the laughingMan based on mouth position 
+            double scalex = self.imageView.bounds.size.height/ciImage.extent.size.width;
+            double scaley = self.imageView.bounds.size.width/ciImage.extent.size.height;
+            self.laughingMan.center = CGPointMake(scaley*(eyeCenter.y-self.laughingMan.bounds.size.height/24.0), scalex*(eyeCenter.x));
+            
+            // Step 29: Set the angle of the laughingMan using eye deltas
+            double deltax = face.leftEyePosition.x-face.rightEyePosition.x;
+            double deltay = face.leftEyePosition.y-face.rightEyePosition.y;
+            double angle = atan2(deltax, deltay);
+            self.laughingMan.transform = CGAffineTransformMakeRotation(angle+M_PI);
+            
+            // Step 30: Set the size based on the dist between the eyes
+            double scale = 12.0*sqrt((deltax*deltax)+(deltay+deltay));
+            self.laughingMan.bounds = CGRectMake(0, 0, scale, scale);
+            faceFound = true;
+        }
+    }
+    
+    // Step 33: If the face is found, apply the image to the face
+    if (faceFound) {
+        [self.laughingMan setHidden:NO];
+    } else {
+        [self.laughingMan setHidden:YES];
+    }
     
     // Step 17: Turn CoreImage into CGImage which can be used in UIImage
     // Step 24: Change createCGImage:ciImage to createCGImage:result
-    CGImageRef ref = [self.context createCGImage:result fromRect:ciImage.extent];
+    CGImageRef ref = [self.context createCGImage:ciImage fromRect:ciImage.extent];
     self.imageView.image = [UIImage imageWithCGImage:ref scale:1.0 orientation:UIImageOrientationRight];
     
     // Step 18: Release the reference
