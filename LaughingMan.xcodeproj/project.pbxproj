@@ -16,6 +16,11 @@
 		813F786714E0E48400436F58 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813F786514E0E48400436F58 /* MainStoryboard_iPhone.storyboard */; };
 		813F786A14E0E48400436F58 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813F786814E0E48400436F58 /* MainStoryboard_iPad.storyboard */; };
 		813F786D14E0E48400436F58 /* LaughingManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813F786C14E0E48400436F58 /* LaughingManViewController.m */; };
+		813F787414E0E4CA00436F58 /* h4x.png in Resources */ = {isa = PBXBuildFile; fileRef = 813F787314E0E4CA00436F58 /* h4x.png */; };
+		813F787914E0E4F700436F58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787514E0E4F700436F58 /* AVFoundation.framework */; };
+		813F787A14E0E4F700436F58 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787614E0E4F700436F58 /* CoreImage.framework */; };
+		813F787B14E0E4F700436F58 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787714E0E4F700436F58 /* CoreMedia.framework */; };
+		813F787C14E0E4F700436F58 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787814E0E4F700436F58 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +28,21 @@
 		813F785314E0E48400436F58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		813F785514E0E48400436F58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		813F785714E0E48400436F58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		813F785B14E0E48400436F58 /* LaughingMan-Info.plist */ = {isa = PBXFileReference; path = "LaughingMan-Info.plist"; sourceTree = "<group>"; };
+		813F785B14E0E48400436F58 /* LaughingMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaughingMan-Info.plist"; sourceTree = "<group>"; };
 		813F785D14E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		813F785F14E0E48400436F58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		813F786114E0E48400436F58 /* LaughingMan-Prefix.pch */ = {isa = PBXFileReference; path = "LaughingMan-Prefix.pch"; sourceTree = "<group>"; };
-		813F786214E0E48400436F58 /* LaughingManAppDelegate.h */ = {isa = PBXFileReference; path = LaughingManAppDelegate.h; sourceTree = "<group>"; };
+		813F786114E0E48400436F58 /* LaughingMan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaughingMan-Prefix.pch"; sourceTree = "<group>"; };
+		813F786214E0E48400436F58 /* LaughingManAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaughingManAppDelegate.h; sourceTree = "<group>"; };
 		813F786314E0E48400436F58 /* LaughingManAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingManAppDelegate.m; sourceTree = "<group>"; };
 		813F786614E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		813F786914E0E48400436F58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		813F786B14E0E48400436F58 /* LaughingManViewController.h */ = {isa = PBXFileReference; path = LaughingManViewController.h; sourceTree = "<group>"; };
+		813F786B14E0E48400436F58 /* LaughingManViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaughingManViewController.h; sourceTree = "<group>"; };
 		813F786C14E0E48400436F58 /* LaughingManViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaughingManViewController.m; sourceTree = "<group>"; };
+		813F787314E0E4CA00436F58 /* h4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h4x.png; sourceTree = "<group>"; };
+		813F787514E0E4F700436F58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		813F787614E0E4F700436F58 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		813F787714E0E4F700436F58 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		813F787814E0E4F700436F58 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813F787914E0E4F700436F58 /* AVFoundation.framework in Frameworks */,
+				813F787A14E0E4F700436F58 /* CoreImage.framework in Frameworks */,
+				813F787B14E0E4F700436F58 /* CoreMedia.framework in Frameworks */,
+				813F787C14E0E4F700436F58 /* CoreVideo.framework in Frameworks */,
 				813F785414E0E48400436F58 /* UIKit.framework in Frameworks */,
 				813F785614E0E48400436F58 /* Foundation.framework in Frameworks */,
 				813F785814E0E48400436F58 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +66,10 @@
 		813F784414E0E48400436F58 = {
 			isa = PBXGroup;
 			children = (
+				813F787514E0E4F700436F58 /* AVFoundation.framework */,
+				813F787614E0E4F700436F58 /* CoreImage.framework */,
+				813F787714E0E4F700436F58 /* CoreMedia.framework */,
+				813F787814E0E4F700436F58 /* CoreVideo.framework */,
 				813F785914E0E48400436F58 /* LaughingMan */,
 				813F785214E0E48400436F58 /* Frameworks */,
 				813F785014E0E48400436F58 /* Products */,
@@ -79,6 +97,7 @@
 		813F785914E0E48400436F58 /* LaughingMan */ = {
 			isa = PBXGroup;
 			children = (
+				813F787314E0E4CA00436F58 /* h4x.png */,
 				813F786214E0E48400436F58 /* LaughingManAppDelegate.h */,
 				813F786314E0E48400436F58 /* LaughingManAppDelegate.m */,
 				813F786514E0E48400436F58 /* MainStoryboard_iPhone.storyboard */,
@@ -155,6 +174,7 @@
 				813F785E14E0E48400436F58 /* InfoPlist.strings in Resources */,
 				813F786714E0E48400436F58 /* MainStoryboard_iPhone.storyboard in Resources */,
 				813F786A14E0E48400436F58 /* MainStoryboard_iPad.storyboard in Resources */,
+				813F787414E0E4CA00436F58 /* h4x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
