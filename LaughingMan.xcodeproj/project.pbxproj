@@ -21,6 +21,8 @@
 		813F787A14E0E4F700436F58 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787614E0E4F700436F58 /* CoreImage.framework */; };
 		813F787B14E0E4F700436F58 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787714E0E4F700436F58 /* CoreMedia.framework */; };
 		813F787C14E0E4F700436F58 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F787814E0E4F700436F58 /* CoreVideo.framework */; };
+		813F787E14E0EBDB00436F58 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 813F787D14E0EBDB00436F58 /* Icon.png */; };
+		813F788014E0EBDF00436F58 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 813F787F14E0EBDF00436F58 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		813F787614E0E4F700436F58 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		813F787714E0E4F700436F58 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		813F787814E0E4F700436F58 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		813F787D14E0EBDB00436F58 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		813F787F14E0EBDF00436F58 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		813F784414E0E48400436F58 = {
 			isa = PBXGroup;
 			children = (
+				813F787F14E0EBDF00436F58 /* Icon@2x.png */,
+				813F787D14E0EBDB00436F58 /* Icon.png */,
 				813F787514E0E4F700436F58 /* AVFoundation.framework */,
 				813F787614E0E4F700436F58 /* CoreImage.framework */,
 				813F787714E0E4F700436F58 /* CoreMedia.framework */,
@@ -175,6 +181,8 @@
 				813F786714E0E48400436F58 /* MainStoryboard_iPhone.storyboard in Resources */,
 				813F786A14E0E48400436F58 /* MainStoryboard_iPad.storyboard in Resources */,
 				813F787414E0E4CA00436F58 /* h4x.png in Resources */,
+				813F787E14E0EBDB00436F58 /* Icon.png in Resources */,
+				813F788014E0EBDF00436F58 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

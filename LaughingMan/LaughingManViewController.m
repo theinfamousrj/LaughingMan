@@ -39,7 +39,8 @@
 @synthesize faceDetector = _faceDetector;
 @synthesize laughingMan = _laughingMan;
 
-// Step 26: Lazy instantiation of CIDetector faceDetector for initialization (low accuracy)
+// Step 26: Lazy instantiation of CIDetector faceDetector for initialization
+// It is currently on CIDetectorAccuracyLow becauce CIDetectorAccuracyHigh drops the framerate significantly
 - (CIDetector *)faceDetector
 {
     if (!_faceDetector) {
@@ -48,7 +49,6 @@
     }
     return _faceDetector;
 }
-
 
 // Step 16: Lazy instantiation of CIContext context for initialization
 - (CIContext *)context
@@ -74,7 +74,7 @@
     self.session = [[AVCaptureSession alloc] init];
     
     // Step 2: Set a session preset (resolution)
-    self.session.sessionPreset = AVCaptureSessionPreset352x288;
+    self.session.sessionPreset = AVCaptureSessionPreset640x480;
     
     // Step 3: Create video device
     self.videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -156,7 +156,7 @@
             self.laughingMan.transform = CGAffineTransformMakeRotation(angle+M_PI);
             
             // Step 30: Set the size based on the dist between the eyes
-            double scale = 12.0*sqrt((deltax*deltax)+(deltay+deltay));
+            double scale = 8.0*sqrt((deltax*deltax)+(deltay+deltay));
             self.laughingMan.bounds = CGRectMake(0, 0, scale, scale);
             faceFound = true;
         }
